@@ -8,7 +8,7 @@
 
 	<title lang="en">Kiss Portal Engine (Phoenix)</title>
 
-	<description lang="en">A simplified version of the Stargate Portal (aka Kiss Portal) for phpBB 3.0.12</description>
+	<description lang="en">A simplified version of the Stargate Portal (aka Kiss Portal) for phpBB 3.0.14</description>
 
 	<author-notes lang="en">
 	All unnecessary code has been removed to produce a simplified version for your phpBB3 forum.
@@ -40,7 +40,7 @@
 	<installation>
 		<level>intermediate</level>
 		<time>2003</time>
-		<target-version>3.0.12</target-version>
+		<target-version>3.0.14</target-version>
 	</installation>
 
 	<history>
@@ -1791,9 +1791,9 @@ function get_random_image($dir_path, $add_link = false, $token = '', $raw = fals
 <div id="p_footer"><!-- PUT FOOTER BLOCKS HERE --></div>]]></action>
 </edit>
 <edit>
-<find><![CDATA[			<li class="icon-home"><a href="{U_INDEX}" accesskey="h">{L_INDEX}</a></li>
+<find><![CDATA[			<li class="icon-home"><a href="{U_INDEX}">{L_INDEX}</a></li>
 ]]></find>
-<action type="replace-with"><![CDATA[			<li class="icon-home"><!-- IF STARGATE --><a href="{U_PORTAL}">{L_PORTAL}</a> &bull; <!-- ENDIF --><a href="{U_INDEX}" accesskey="h">{L_INDEX}</a></li>
+<action type="replace-with"><![CDATA[			<li class="icon-home"><!-- IF STARGATE --><a href="{U_PORTAL}">{L_PORTAL}</a> &bull; <!-- ENDIF --><a href="{U_INDEX}">{L_INDEX}</a></li>
 ]]></action>
 </edit>
 
