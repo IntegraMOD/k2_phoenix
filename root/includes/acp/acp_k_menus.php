@@ -522,7 +522,7 @@ function get_menu($this_one)
 	}
 	else
 	{
-		$sql = 'SELECT * FROM ' . K_MENUS_TABLE . ' WHERE menu_type=' . (int)$this_one . 'ORDER BY ndx ASC';
+		$sql = 'SELECT * FROM ' . K_MENUS_TABLE . ' WHERE menu_type = ' . (int)$this_one . ' ORDER BY ndx ASC';
 	}
 
 	if ($result = $db->sql_query($sql))
